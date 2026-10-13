@@ -1,0 +1,11 @@
+# Terminal 1
+cd server
+npm install
+cp .env.example .env     # set MONGO_URI, JWT_SECRET, ADMIN_EMAIL, ADMIN_PASSWORD
+npm run seed
+npm run dev
+
+# Terminal 2
+cd client
+npm install
+npm run dev
